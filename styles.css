@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Oculta la scrollbar*/
+}
+
 h1 {
   font-size: 3.5em;
 }
@@ -61,4 +65,41 @@ button {
 button:hover {
   background-color: rgb(29, 29, 29);
   cursor: pointer;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+header a #logo {
+  width: 120px;
+  margin: 0;
+  padding: 12px 15px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding: 12px 10px;
 }
