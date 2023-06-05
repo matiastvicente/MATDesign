@@ -187,6 +187,14 @@ header nav {
   margin: 30px;
 }
 
+footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
 .text {
   color: white;
   font-size: 20px;
@@ -197,8 +205,6 @@ header nav {
   -ms-transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-
-@charset "UTF-8";
 
 .svg-inline--fa {
   vertical-align: -0.09em;
@@ -228,12 +234,12 @@ header nav {
   margin-bottom: 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover,
+/* .rounded-social-buttons .social-button:hover,
 .rounded-social-buttons .social-button:focus {
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
-}
+} */
 
 .rounded-social-buttons .fa-twitter,
 .fa-facebook-f,
