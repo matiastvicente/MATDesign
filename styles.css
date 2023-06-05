@@ -38,20 +38,19 @@ ul {
 #galeria {
   display: flex;
   width: 100vw;
-  height: 430px;
+  height: 600px;
 }
 
 #galeria img {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
-  opacity: 0.8;
   transition: 0.5s ease;
 }
 
 #galeria img:hover {
+  z-index: 10px;
   width: 300px;
-  opacity: 1;
   filter: contrast(120%);
 }
 
@@ -134,7 +133,7 @@ header nav {
 
 #sobre-nosotros .container {
   text-align: center;
-  padding: 200px 40px;
+  padding: 250px 40px;
   color: white;
 }
 
@@ -155,12 +154,24 @@ header nav {
   border-radius: 15px;
 }
 
-.carta:nth-child(2) {
-  background-image: url("media/Ballester\ Detail.png");
+.carta:first-child {
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("media/Ballester\ Detail.png");
 }
 
 .carta:last-child {
-  background-image: url("media/Ballester\ Detail.png");
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("media/Belicias.png");
 }
 
 #packs h2 {
@@ -185,6 +196,20 @@ header nav {
 
 #valores li {
   margin: 30px;
+}
+
+@media (min-width: 720px) {
+  #packs .container2 {
+    display: flex;
+  }
+
+  #packs p {
+    display: block;
+  }
+
+  #packs .carta {
+    padding: 10px 20px 40px;
+  }
 }
 
 footer {
