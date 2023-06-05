@@ -80,7 +80,7 @@ header {
 header a #logo {
   width: 120px;
   margin: 0;
-  padding: 12px 15px;
+  padding: 12px 15px 9px 15px;
 }
 
 header .container {
@@ -102,4 +102,46 @@ header nav {
   text-align: center;
   justify-content: center;
   padding: 12px 10px;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 95vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("media/Ballester\ Detail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#sobre-nosotros {
+  height: 100vh;
+  background-color: black;
+}
+
+#sobre-nosotros .container {
+  text-align: center;
+  padding: 200px 40px;
+  color: white;
+}
+
+#packs {
+  height: 100vh;
+}
+
+#packs .container {
+  text-align: center;
+}
+
+#packs p {
+  display: none;
 }
