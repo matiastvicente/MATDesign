@@ -15,204 +15,414 @@ body::-webkit-scrollbar {
   display: none; /* Oculta la scrollbar*/
 }
 
-h1 {
-  font-size: 3.5em;
-}
-
-h2 {
-  font-size: 2.7em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.25em;
-}
-
-ul {
-  list-style: none;
-}
-
-#galeria {
-  display: flex;
-  width: 100vw;
-  height: 600px;
-}
-
-#galeria img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  transition: 0.5s ease;
-}
-
-#galeria img:hover {
-  z-index: 10px;
-  width: 300px;
-  filter: contrast(120%);
-}
-
-button {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  color: white;
-  background-color: black;
-}
-
-button:hover {
-  background-color: rgb(29, 29, 29);
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
   cursor: pointer;
-}
-
-.container {
-  max-width: 1400px;
-  margin: auto;
-}
-
-header {
-  background-color: black;
-  color: white;
-}
-
-header a #logo {
-  width: 120px;
-  margin: 0;
-  padding: 12px 15px 9px 15px;
-}
-
-header .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header nav a {
-  color: white;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
   text-decoration: none;
-  padding: 7px;
-}
-
-header nav {
-  display: flex;
-  flex-direction: row;
   text-align: center;
-  justify-content: center;
-  padding: 12px 10px;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
-#hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 95vh;
-  color: white;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("media/Ballester\ Detail.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-#sobre-nosotros {
-  height: 100vh;
-  background-color: black;
-}
-
-#sobre-nosotros .container {
-  text-align: center;
-  padding: 250px 40px;
-  color: white;
-}
-
-#packs {
-  height: 100vh;
-}
-
-#packs .container {
-  text-align: center;
-  padding: 130px 12px;
-}
-
-#packs .carta {
-  background-size: cover;
-  background-position: center center;
-  padding: 50px;
-  margin: 20px;
-  border-radius: 15px;
-}
-
-.carta:first-child {
-  color: white;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("media/Ballester\ Detail.png");
-}
-
-.carta:last-child {
-  color: white;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("media/Belicias.png");
-}
-
-#packs h2 {
-  margin-top: 0px;
-}
-
-#packs p {
-  display: none;
-}
-
-#valores {
-  height: 70vh;
-  background-color: black;
-  color: white;
-}
-
-#valores .container {
-  padding: 120px 12px 0px 0px;
-  text-align: left;
-  display: flex;
-}
-
-#valores li {
-  margin: 30px;
-}
-
+/*DESKTOP*/
 @media (min-width: 1080px) {
-  #packs .container2 {
-    padding-top: 70px;
-    display: flex; /**/
+  h1 {
+    font-size: 3.5em;
   }
 
-  #packs p {
-    display: block;
+  h2 {
+    font-size: 2.7em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.25em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  #galeria {
+    display: flex;
+    width: 100vw;
+    height: 600px;
+  }
+
+  #galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: 0.5s ease;
+  }
+
+  #galeria img:hover {
+    z-index: 10px;
+    width: 300px;
+    filter: contrast(120%);
+  }
+
+  button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: black;
+  }
+
+  button:hover {
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  header {
+    background-color: black;
+    color: white;
+  }
+
+  header a #logo {
+    width: 120px;
+    margin: 0;
+    padding: 12px 15px 9px 15px;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 12px 10px;
+  }
+
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 95vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("media/Ballester\ Detail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #sobre-nosotros {
+    height: 100vh;
+    background-color: black;
+  }
+
+  #sobre-nosotros .container {
+    text-align: center;
+    padding: 250px 40px;
+    color: white;
+  }
+
+  #packs {
+    height: 100vh;
+  }
+
+  #packs .container {
+    text-align: center;
+    padding: 180px 12px;
+  }
+
+  #packs .container2 {
+    display: flex;
   }
 
   #packs .carta {
-    padding: 10px 20px 40px;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
+
+  .carta:first-child {
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("media/Ballester\ Detail.png");
+  }
+
+  .carta:last-child {
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("media/Belicias.png");
+  }
+
+  #packs h2 {
+    margin-top: 0px;
+  }
+
+  #packs p {
+    display: ;
+  }
+
+  #valores {
+    height: 91vh;
+    background-color: black;
+    color: white;
+  }
+
+  #valores .container {
+    padding: 250px 12px 0px 0px;
+    text-align: left;
+    display: flex;
+  }
+
+  #valores li {
+    font-size: 1.5em;
+    margin: 30px;
+  }
 }
+
+/*MOBILE*/
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 5.5em;
+  }
+
+  h2 {
+    font-size: 2.7em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  #galeria {
+    display: flex;
+    width: 100vw;
+    height: 900px;
+  }
+
+  #galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: 0.5s ease;
+  }
+
+  #galeria img:hover {
+    z-index: 10px;
+    width: 300px;
+    filter: contrast(120%);
+  }
+
+  button {
+    height: 3em;
+    width: 10em;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: black;
+  }
+
+  button:hover {
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  header {
+    background-color: black;
+    color: white;
+    height: 8.5vh;
+  }
+
+  header a #logo {
+    height: 7.5vh;
+    margin: 0;
+    padding: 10% 10% 5% 8%;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 220%;
+  }
+
+  header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding-right: 15px;
+  }
+
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 91.6vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("media/Ballester\ Detail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 50px;
+  }
+
+  #sobre-nosotros {
+    height: 102vh;
+    background-color: black;
+  }
+
+  #sobre-nosotros .container {
+    text-align: center;
+    padding: 600px 80px;
+    color: white;
+    font-size: 2em;
+  }
+
+  #packs {
+    height: 100vh;
+  }
+
+  #packs p {
+    display: none;
+  }
+
+  #packs h2 {
+    font-size: 5em;
+  }
+
+  #packs h3 {
+    font-size: 4em;
+  }
+
+  #packs .container {
+    align-items: center;
+    text-align: center;
+    padding: 350px 12px;
+  }
+
+  #packs .carta {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    padding: 80px;
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  .carta:first-child {
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("media/Ballester\ Detail.png");
+  }
+
+  .carta:last-child {
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("media/Belicias.png");
+  }
+
+  #valores {
+    height: 50vh;
+    background-color: black;
+    color: white;
+  }
+
+  #valores .container {
+    padding: 120px 50px;
+    text-align: left;
+    display: flex;
+  }
+
+  #valores li {
+    font-size: 2.5em;
+    margin: 30px;
+  }
 
 footer {
   height: 10vh;
@@ -239,26 +449,6 @@ footer {
 
 .rounded-social-buttons {
   text-align: center;
-}
-
-.rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
 /* .rounded-social-buttons .social-button:hover,
