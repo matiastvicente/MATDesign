@@ -198,7 +198,7 @@ header nav {
   margin: 30px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1080px) {
   #packs .container2 {
     padding-top: 70px;
     display: flex; /**/
