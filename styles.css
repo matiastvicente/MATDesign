@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   }
 
   #galeria img:hover {
-    z-index: 10px;
+    z-index: 10;
     width: 300px;
     filter: contrast(120%);
   }
@@ -72,35 +72,40 @@ body::-webkit-scrollbar {
   }
 
   .container {
-    max-width: 1400px;
+    max-width: 100vw;
     margin: auto;
   }
 
-  header {
+  .navbar {
     background-color: black;
     color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 10px #0004;
+    z-index: 99999;
+    margin: 0;
   }
 
-  header a #logo {
+  .navbar a #logo {
     width: 120px;
     margin: 0;
     padding: 12px 15px 9px 15px;
   }
 
-  header .container {
+  #navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  header nav a {
+  .navbar nav a {
     color: white;
     text-decoration: none;
     padding: 7px;
   }
 
-  header nav {
+  .navbar nav {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -114,7 +119,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 95vh;
+    height: 100vh;
     color: white;
     background-image: linear-gradient(
         0deg,
